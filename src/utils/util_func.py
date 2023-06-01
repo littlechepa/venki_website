@@ -1,4 +1,6 @@
 from inspect import currentframe, getframeinfo # To get filename and line numbers
+import os
+from dash import html
 
 
 def print_line_info(print_file_name = True):
@@ -30,4 +32,12 @@ def print_line_info(print_file_name = True):
     else:
         print("********* Here at %s" % (loc_str))
 
-    
+def render_certificate():
+    folder_path = 'assets/certificates'
+    cert_children = []
+    for root, _, files in os.walk(folder_path):    
+        for file_name in files:
+            file_name = os.path.join(root, file_name)
+            # cert_children.append(html.Img(src=file_name,style = {"margin":"10px",'width': '100%', 'height': '600px'}))
+            cert_children.append(html.Img(src = file_name, className = "cert-img"))
+    return cert_children

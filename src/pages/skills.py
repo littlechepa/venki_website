@@ -39,10 +39,10 @@ layout = dbc.Container(
                     children=[
                         html.Span(skill, className='skill') for skill in skills
                     ],
-                    className='skill-container'
+                    className = 'skill-container'
                 )
             ],
-            className='main-container'
+            className = 'skills-container'
         )
     ]
 )

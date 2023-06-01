@@ -28,7 +28,8 @@ app.layout = dbc.Container(
         dbc.Row(
             [
                 navbar
-            ]
+            ],
+            className = 'navbar'
         ),
         dbc.Row(
             [
