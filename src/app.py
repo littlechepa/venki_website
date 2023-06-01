@@ -15,6 +15,7 @@ import pandas as pd
 import numpy as np
 from utils.util_func import print_line_info
 from components.navbar import navbar
+from components.footer import footer
 
 
 external_stylesheets = [dbc.themes.BOOTSTRAP, 'https://use.fontawesome.com/releases/v6.4.0/css/all.css']
@@ -30,39 +31,19 @@ app.layout = dbc.Container(
             ]
         ),
         dbc.Row(
-            dash.page_container
+            [
+                dash.page_container                
+            ], 
+            className = 'page-container'
         ),
         dbc.Row(
             [
-                html.Div(
-                    className="social-media-icons",
-                    style = {'text-align':'center'},
-                    children=[
-                        html.A(
-                            href="https://www.linkedin.com/in/vallacheruvu/",
-                            className="social-icon linkedin",
-                            target='_blank'
-                        ),
-                        html.A(
-                            href="https://github.com/littlechepa",
-                            className="social-icon github",
-                            target='_blank'
-                        ),
-                        html.A(
-                            href="https://www.facebook.com/venkisreevani",
-                            className="social-icon facebook",
-                            target='_blank'
-                        ),
-                        html.A(
-                            href="https://www.twitter.com/vallacheruvu",
-                            className="social-icon twitter",
-                            target='_blank'
-                        )                        
-                    ]
-                )
-            ]
+                footer
+            ],
+            className = 'footer'
         )
-    ]
+    ],
+    className='wrapper'
 )
 
 if __name__ == "__main__":
