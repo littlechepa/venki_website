@@ -16,7 +16,7 @@ contact_content_mobile = [
                 className="card-text",
             ),
             html.P(
-                "Available from 09:30 to 1830 IST everyday"
+                "Available from 09:30 to 18:30 IST everyday"
             )
         ]
     ),
