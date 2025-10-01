@@ -12,7 +12,7 @@ layout = dbc.Container(
         html.Div(id = "div-cert"),
     ]
 )
-
+print(os.getcwd())
 @callback(
     Output("div-cert", "children"),
     Input("div-cert", "children")
