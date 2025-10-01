@@ -12,7 +12,7 @@ layout = dbc.Container(
         html.Div(id = "div-cert"),
     ]
 )
-print(os.getcwd())
+
 @callback(
     Output("div-cert", "children"),
     Input("div-cert", "children")
@@ -24,5 +24,3 @@ def render_certs(value):
         cert_children.append(html.Img(src = f"assets/certificates/{file_name}", className = "cert-img"))
     return cert_children
 
-
-print("this is for testing")
