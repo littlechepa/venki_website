@@ -24,5 +24,3 @@ def render_certs(value):
         cert_children.append(html.Img(src = f"assets/certificates/{file_name}", className = "cert-img"))
     return cert_children
 
-
-print("this is for testing")
