@@ -21,7 +21,8 @@ footer = html.Div(
                 target='_blank'
             ),
             html.A(
-                href="https://www.twitter.com/vallacheruvu",
+                # href="https://www.twitter.com/vallacheruvu",
+                href="https://x.com/vallacheruvu",
                 className="social-icon twitter",
                 target='_blank'
             )                        

@@ -18,6 +18,11 @@ layout = dbc.Container(
     Input("div-cert", "children")
 )
 def render_certs(value):
+    '''
+    Docstring for render_certs
+    
+    :param value: Description
+    '''
     folder_path = os.path.join(os.getcwd(), "src/assets/certificates")
     cert_children = []
     for file_name in os.listdir(folder_path):
